@@ -1,0 +1,726 @@
+/*
+#first-box
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+    border-color: 10px 10px saddlebrown;
+    border-radius: 10px 10px 10px 10px ;
+    box-sizing: 10px 10px;
+    background: linear-gradient(3000deg,rgb(0, 0, 10),rgb(5, 5, 58),rgb(5, 5, 58));
+    color: rgba(34, 1, 34, 0.911);
+}  
+*/
+*
+{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior:smooth;
+}
+#por
+{
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    text-shadow: 0px 0px 10px rgb(216, 216, 223);
+    text-overflow: 10px 10px 3px 3px ;
+    box-shadow: 1px 1px 10px black ;
+    animation: change linear infinite;
+}
+@keyframes change {
+    from
+    {
+        text-shadow: 0px 0px 10px rgb(12, 12, 15); 
+        box-shadow: 1px 1px 20px black ;
+        
+    }
+    to
+    {
+        text-shadow: 0px 0px 10px rgb(28, 28, 88);
+        box-shadow: 1px 1px 50px white ;
+    }
+   
+}
+#first-box
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(3000deg,rgb(5, 5, 58),rgb(5, 5, 58),rgb(5, 5, 58));
+}
+#name-box
+{
+    color:rgb(170, 150, 150);
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: 17%;
+    left: 40px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    border-radius: 20px;
+    animation:  name_animetion;
+    transition: 2s;
+    transform: translate(10px);
+    font-style: italic;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+    
+}
+#para-tag
+{
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: 25%;
+    left: 90px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-indent: 10px;
+    font-style: italic;
+    box-shadow: 1px 1px 10px salmon ;
+    transition: 2s;
+}
+
+#name-box::before
+{
+    content: '';
+    animation:  name_animetion;
+    transition: 2s;
+    transform: translate(10px);
+    font-style: italic;
+    z-index: 1;
+}
+#name-box::after
+{
+    content: '';
+    animation:  name_animetion;
+    transition: 2s;
+    transform: translate(10px);
+    font-style: italic;
+    z-index: 2;
+}
+
+#name-box:hover
+{
+    color:rgb(170, 150, 150);
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: 17%;
+    left: 40px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    border-radius: 20px;
+    animation:  name_animetion;
+    transition: 2s;
+    transform: translate(10px);
+    font-style: italic;
+    text-shadow: 0px 0px 10px salmon;
+    box-shadow: 0px 5px 5px salmon ;
+}
+
+#para-tag:hover
+{
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: 25%;
+    left: 90px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-indent: 10px;
+    font-style: italic;
+    box-shadow: 1px 1px 10px salmon ;
+    box-shadow: 5px 5px 5px  salmon ;
+    transition: 2s;
+}
+
+@keyframes name_animetion 
+{
+    0%
+    {
+        transform: translate(300px);
+    }
+    50%
+    {
+        transform: translate(400px);
+    }
+    100%
+    {
+        transform: translate(500px);
+    }
+}
+
+#header
+{
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+}
+
+#header-box ul a
+{
+   color: white;
+   position: relative;
+   top: 40px;
+   padding: 10px;
+   display: inline-block;
+   text-indent: 10px;
+   font-style: italic;
+   scroll-behavior: smooth;
+   transition: 2s;
+   box-shadow: 1px 1px 10px  salmon;
+   
+}
+#header-box ul
+{
+    text-transform: uppercase;
+    position: relative;
+    left: 67%; 
+    width: 450px;
+    height: 100px; 
+}
+
+#header-box a:hover
+{
+    box-shadow: 1px 1px 10px  salmon;
+    transition: 3s;
+    margin: 10px 10px 10px 10px;
+    text-indent: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#skills-box
+{
+    
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(3000deg,rgb(5, 5, 58),rgb(5, 5, 58),rgb(5, 5, 58));
+   justify-content: center;
+  
+   
+}
+
+#full-box
+{
+    width: 40%;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+    left: 10%;
+    justify-content: center;
+    top: 50px;
+    box-shadow: 1px 1px 10px salmon ;
+    box-shadow: 5px 5px 5px  salmon ;
+    background: linear-gradient(3000deg,rgb(30, 30, 51),rgb(5, 5, 58),rgb(5, 5, 58));
+}
+#button
+{
+    width: 70px;
+    height: 10px;
+    background-color:transparent;
+    color: rgb(230, 230, 241);
+    position: relative;
+    top: 4%;
+    left: 80%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+#button #btn
+{
+    width: 70px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    background: linear-gradient(3000deg,rgb(30, 30, 51),rgb(5, 5, 58),rgb(5, 5, 58));
+    border-radius: 5px; 
+    transition: 5s;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9); 
+    color: whitesmoke;
+    display: none;
+    
+}
+
+#soft-skills
+{
+    width: 69%;
+    height: 70vh;
+    background-color: white;
+    position: relative;
+    left: 110%;
+    justify-content: center;
+    top: -350px;
+    box-shadow: 1px 1px 10px salmon ;
+    box-shadow: 5px 5px 5px  salmon ; 
+    transition: 5s;
+    background: linear-gradient(3000deg,rgb(30, 30, 51),rgb(5, 5, 58),rgb(5, 5, 58));
+    
+}
+
+#soft-skills h2{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+
+}
+#soft-skills ul li
+{
+    text-decoration:solid;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+    left: 20px;
+    color: aqua;
+    font-style: italic;
+    transition: 2s;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+    width: 200px;   
+}
+#btn-1
+{
+   width: 70px;
+   height: 30px;
+   position: relative;
+   left: 163%;
+   top: -0%;
+   background: linear-gradient(3000deg,rgb(30, 30, 51),rgb(5, 5, 58),rgb(5, 5, 58));
+  color: white;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-shadow: 0px 0px 10px rgb(158, 238, 9); 
+  display: none; 
+}
+
+#tech-skills li
+{
+  
+  text-transform: uppercase;
+  text-decoration:solid;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  font-size: x-large;
+  left: 20px;
+  color: aqua;
+  font-style: italic;
+  text-shadow: 0px 0px 10px rgb(158, 238, 9);
+  padding: 10px; 
+  margin:0px;
+  word-spacing: 1px;
+  justify-content: center;
+  position: relative;
+  left: 60px;
+  top: 60px;
+}
+
+#tech-skills h2
+{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    text-transform: uppercase;
+    text-decoration:solid;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+    left: 20px;
+    color: aqua;
+    font-style: italic;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+}
+#tech-skills
+{
+    display: inline-block;
+}
+
+#interested
+{
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    left: 60%;
+    color: white;
+    box-shadow: 1px 1px 10px salmon ;
+    background-color: transparent;
+    border-radius: 20px;
+    font-style: italic;
+    transition: 2s;
+}
+
+#interested h2
+{
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+#interested ol li
+{
+   
+   position: relative;
+   top: 40px;
+   text-transform: uppercase;
+   word-spacing: 1px;
+   text-decoration: none;
+   list-style: none;
+   left: 20px;
+   padding: 10px;
+   
+   
+}
+#interested ol li:hover
+{
+    box-shadow: 1px 1px 10px rgb(99, 27, 19) ;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+    transform: translate(30px);
+    transition: 2s;
+    width: 300px;
+}
+#tech-skills ul li:hover
+{
+    box-shadow: 1px 1px 10px rgb(99, 27, 19) ;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+    transform: translate(30px);
+    transition: 2s;
+    width: 430px;
+}
+#soft-skills ul li:hover
+{
+    box-shadow: 1px 1px 10px rgb(99, 27, 19) ;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+    transform: translate(30px);
+    transition: 2s;
+    width: 200px;
+}
+#project
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(3000deg,rgb(5, 5, 58),rgb(5, 5, 58),rgb(5, 5, 58));
+}
+#first
+{
+    width: 90%;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+#name-title
+{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+}
+#first
+{
+    width: 90%;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    background-color: transparent;
+    box-shadow: 4px 4px 3px salmon;
+}
+#first h2{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    text-decoration: underline;
+    left: 30px;
+}
+#first-para
+{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    word-spacing: 3px;
+    left: 30px; 
+}
+#second
+{
+    width: 90%;
+    height: 150px;
+    position: relative;
+    top: 40px;
+    background-color: transparent;
+    box-shadow: 4px 4px 3px salmon;
+    left: 20px;
+}
+#second h2{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    text-decoration: underline;
+    left: 30px;
+}
+#second-para
+{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+    word-spacing: 3px;
+    left: 30px; 
+}
+#third
+{
+    width: 90%;
+    height: 150px;
+    position: relative;
+    top: 60px;
+    background-color: transparent;
+    box-shadow: 4px 4px 3px salmon;
+    left: 20px; 
+}
+#third h2{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    text-decoration: underline;
+    left: 30px;
+}
+#third-para
+{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 60px;
+    word-spacing: 3px;
+    left: 30px; 
+}
+#cert
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(3000deg,rgb(5, 5, 58),rgb(5, 5, 58),rgb(5, 5, 58));
+    
+    
+}
+#certi
+{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 0px 0px 10px rgb(158, 238, 9);
+}
+
+#cer-name
+{
+    width: 90%;
+    height: 50vh;
+    text-align: justify;
+    padding: 50px;
+    font-size: large;
+    color: white;
+    box-shadow: 5px 5px 5px  salmon ;  
+}
+#o,#n,#e,#t,w{
+    margin-top: 20px;
+    text-decoration: dotted;
+    list-style-type: circle;
+}
+
+#about-box
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(3000deg,rgb(5, 5, 58),rgb(5, 5, 58),rgb(5, 5, 58));
+}
+#one-box
+{
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    position: relative;
+    left: 30px;
+    
+    border-radius: 10px;
+
+}
+#one-one
+{
+    width: 260px;
+    height: 240px;
+    background-color: transparent;
+    position: relative;
+    left: 70px;
+    justify-content: center;
+    top: 30px;
+    border-radius: 20px;
+    transition: 1.2s;
+    display: inline-block;
+    
+}
+ #one-one:hover
+{
+    width: 260px;
+    height: 240px;
+    background-color: transparent;
+    position: relative;
+    left: 70px;
+    justify-content: center;
+    top: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 19px seashell;
+    transition: 1.2s;
+     
+}
+#abo
+{
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    transition: 5s;
+    text-decoration: underline white 2px;
+}
+#abo-p
+{
+    text-overflow: ellipsis;
+    padding: 2px;
+    position: relative;
+    top: 39px;
+    left: 5px;
+    color: wheat;
+    display: none;
+}
+#one-one:hover #abo-p
+{
+    display: block;
+    transition: 1.2s;
+}
+
+#hob
+{
+    width: 270px;
+    height: 240px;
+    background-color: transparent;
+    position: relative;
+    left: 500px;
+    justify-content: center;
+    top: -210px;
+    border-radius: 20px;
+    display: inline-block;  
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    transition: 2s;
+}
+
+#hobb
+{
+    text-transform: uppercase;
+    text-align: center;
+    transition: 5s;
+    font-size: X-larger;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    text-decoration: underline white 2px;
+
+
+}
+#hobbb 
+{
+    text-transform: uppercase;
+    font-size: X-larger;
+    text-align: left;
+    list-style:none;
+    padding: 50px;
+    background-color: transparent;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    display: none;
+    transition: 2s;
+}
+#hob:hover
+{
+    width: 270px;
+    height: 240px;
+    background-color: transparent;
+    position: relative;
+    left: 500px;
+    justify-content: center;
+    top: -200px;
+    border-radius: 20px;
+    display: inline-block;  
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    box-shadow: 1px 0px 19px seashell;
+}
+#hob:hover #hobbb 
+{
+    display: block;
+    transition: 2s;
+    color: white;
+}
+#contact
+{
+    width: 310px;
+    height: 240px;
+    background-color:transparent;
+    position: relative;
+    left: 900px;
+    justify-content: center;
+    top: -250px;
+    border-radius: 20px;
+    display: inline-block;  
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    transition: 2s;
+}
+#contact-info
+{
+    text-transform: uppercase;
+    text-align: center;
+    transition: 5s;
+    font-size: X-larger;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    text-decoration: underline white 2px;
+}
+#con li
+{
+    text-transform: uppercase;
+    font-size: X-larger;
+    text-align: left;
+    list-style:none;
+    padding: 10px;
+    background-color: transparent;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    display: none;
+}
+#contact:hover #con li
+{
+    text-transform: uppercase;
+    font-size: X-larger;
+    text-align: left;
+    list-style:none;
+    padding: 10px;
+    background-color: transparent;
+    text-shadow: 0px 0px 5px rgb(97, 26, 211);
+    display: block;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+#contact:hover
+{
+    box-shadow: 1px 0px 19px seashell;
+}
+
+
+
